@@ -14,7 +14,7 @@ source:
 
 build:
   merge_build_host: True  # [win]
-  number: 1
+  number: 2
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -36,6 +36,9 @@ test:
 about:
   home: https://CRAN.R-project.org/package=rapidjsonr
   license: MIT
+  license_file: 
+    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
+    - LICENSE
   summary: 'Provides JSON parsing capability through the ''Rapidjson'' ''C++'' header-only library. '
   license_family: MIT
 
