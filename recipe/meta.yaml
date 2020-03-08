@@ -1,4 +1,4 @@
-{% set version = '1.1' %}
+{% set version = "1.2.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/rapidjsonr_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/rapidjsonr/rapidjsonr_{{ version }}.tar.gz
-  sha256: 8d2f9e0c91c746a49b0904d4f52cdbac75bc11b13dacf272216b4d0fa5849740
+  sha256: 62c94fcdcf5d0fbdfa2f6168affe526bf547c37c16d94e2e1b78d7bf608eed1f
 
 build:
-  merge_build_host: True  # [win]
-  number: 2
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -36,10 +36,10 @@ test:
 about:
   home: https://CRAN.R-project.org/package=rapidjsonr
   license: MIT
-  license_file: 
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
+  license_file:
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
     - LICENSE
-  summary: 'Provides JSON parsing capability through the ''Rapidjson'' ''C++'' header-only library. '
+  summary: "Provides JSON parsing capability through the 'Rapidjson' 'C++' header-only library. "
   license_family: MIT
 
 extra:
