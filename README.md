@@ -1,11 +1,11 @@
-About r-rapidjsonr
-==================
+About r-rapidjsonr-feedstock
+============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-rapidjsonr-feedstock/blob/main/LICENSE.txt)
 
 Home: https://CRAN.R-project.org/package=rapidjsonr
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-rapidjsonr-feedstock/blob/main/LICENSE.txt)
 
 Summary: Provides JSON parsing capability through the 'Rapidjson' 'C++' header-only library. 
 
