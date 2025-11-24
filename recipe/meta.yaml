@@ -1,4 +1,4 @@
-{% set version = "1.2.0" %}
+{% set version = "1.2.1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/rapidjsonr_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/rapidjsonr/rapidjsonr_{{ version }}.tar.gz
-  sha256: 62c94fcdcf5d0fbdfa2f6168affe526bf547c37c16d94e2e1b78d7bf608eed1f
+  sha256: bd447155af45c812e97d2e9f25faebd4aed0acc4a11c8d002bc50549c50a448c
 
 build:
-  number: 5
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
